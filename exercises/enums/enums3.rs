@@ -49,7 +49,7 @@ impl State {
         // Remember: When passing a tuple as a function argument, you'll need
         // extra parentheses: fn function((t, u, p, l, e))
         match message{
-           Message::ChanColor(r, b, g) => {
+           Message::ChangeColor(r, b, g) => {
             self.change_color((r, b, g));
            } 
 
